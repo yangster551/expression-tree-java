@@ -5,11 +5,8 @@ This project implements an expression tree in Java. It converts infix expression
 ## Features
 - Converts infix expressions to postfix using a stack-based algorithm
 - Builds a binary expression tree from postfix input
-- Traverses the tree to generate:
-  - Prefix (preorder)
-  - Infix (inorder with parentheses)
-  - Postfix (postorder)
-- Supports basic arithmetic operators (+, -, *, /, ^)
+- Traverses the tree to generate prefix, infix, and postfix expressions
+- Supports basic arithmetic operators such as +, -, *, /, and ^
 
 ## Concepts Used
 - Stacks
@@ -21,8 +18,9 @@ This project implements an expression tree in Java. It converts infix expression
 ## Files
 - `ExpressionTree.java` – builds and manages the expression tree
 - `Converter.java` – converts infix expressions to postfix
-- `ParserHelper.java` – handles tokenizing input expressions
-- `ArrayStack.java` / `LinkedStack.java` – stack implementation
+- `ParserHelper.java` – parses input expressions into tokens
+- `ArrayStack.java` – stack implementation used in conversion
+- `Stack.java` – stack interface
 - `Main.java` – runs the program and handles user input
 
 ## How to Run
